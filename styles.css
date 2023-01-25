@@ -1,8 +1,9 @@
 :root {
-    --light1: #deeaee;
-    --medium: #b1cbbb;
-    --light2: #eea29a;
-    --dark2: #c94c4c;
+    --light1: #F7F4D4;
+    --theme: #ae0d7a;
+    --dark1: #7cb833;
+    --light2: #FDED2A;
+    --dark2: #213409;
     --black: #000;
     --white: #fff;
 
@@ -11,12 +12,13 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    background-color: var(--light1);
+    background-color: var(--dark2);
+    
 }
 
 #header {
     border: 3px solid #000000;
-    background-color: var(--medium);
+    background-color: var(--light1);
     width: 90%;
     height: auto;
     margin-top: 4em;
@@ -32,23 +34,28 @@ body {
 #navlist {
     border: 3px solid white;
     width: 20%;
-    background-color: var(--medium);
+    background-color: var(--light1);
     
 }
 
 
 #skills {
     border: 2px solid white;
-    background-color: var(--light2);
-    margin: 10%;
-    width: 60%;
+    background-color: var(--dark1);
+    margin: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 40%;
     float: right;
 }
 
 #objective {
-    border: 2px solid white;
-    background-color: var(--light2);
-    width: 45%;
+    border: 2px solid var(--black);
+    background-color: var(--dark1);
+    width: 35%;
+    margin: 1em; 
+    padding-left: 2em;   
+    padding-right: 2em;
     float: left;
 
 }
