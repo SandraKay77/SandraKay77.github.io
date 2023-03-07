@@ -1,35 +1,81 @@
 $(
     function(){
-        const page_names =  ["Index", "About_Me", "Art_Projects", "CV"];
-        // const body = 
+        const PAGE_NAMES =  ["Index", "About_Me", "Art_Projects", "CV"];
+        
+        var WINDOW_WIDTH = $(window).width();
+        var WINDOW_HEIGHT = $(window).height();
+        
 
         function createPage(){
             navBar();
+            myObjectives();
             
         }
 
         function navBar(){
             pglayout();
-            var navList = $('<div id="nav"> <ul id="navlist"> ' + '</ul> </div>');
-            $("body").append(navList);
+           
+                '<ul id="navList"></ul>');
+            
+
         let page = "";
-            for (let x of page_names){
+            for (let x of PAGE_NAMES){
             page = $('<li> <a href=' + x + '.html>' + x + '</a> </li>');
-            $('#navlist').append(page);
- 
+            $('#navList').append(page);
+            }
+
+        
+            
         }
 
+// base layout of all pages
         function pglayout(){
-            var header = $('<div id="header" class="center"> <h1>Sandra Schreffler</h1> </div>');
-            var mainDiv = $('<div id="content" class="center"></div>');
+            var header = $("<div/>", {
+                id: "header",
+                class: "center"
+            }).css(
+                {
+                    "backgroundColor": "var(--light2)",
+                    "width": "50%"
+                }
+            ).html('<h1> Sandra Schreffler </h1>');
 
-            $('body').append(header).append(mainDiv);
+            var navBar = $("<div/>", {
+                id: "navbar",
+                class: "allPages"
+            }).css(
+                {
+                    "position": "fixed",
+                    "top": "0",
+                    "left": "0" 
+                }).html('<button onclick="navDrop()"> Menu </button>');
+                
+            $('body').append(header, navBar);
+
+            // pageSize('content');
         }
 
 
-     
-    }
+        // responsive updating the window size
+        function resize(){
 
+        }
+// building Objective section of CV 
+        function myObjectives(){
+            $("<div/>", {
+                    id: "objective",
+                    class: "center"
+                }).css(
+                    {
+                        "backgroundColor": "var(--dark1)",
+                        "font-size": "1em",
+                        "width": "30%",
+                        "float": "right"
+                    }
+                    ).appendTo('#cvPage').html('<p>hello world</p>');
+                
+            }
+    
     
 
 
@@ -38,6 +84,7 @@ $(
 
 
     return function(evt){
+        $(window).resize();
         createPage();
 
     }

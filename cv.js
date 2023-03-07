@@ -53,7 +53,7 @@ $(
         //     pageDiv
         // }
 
-        // building Objective section of CV 
+        
         function myObjectives(){
             $("<div/>", {
                     id: "objective",
@@ -65,9 +65,7 @@ $(
                         "width": "30%",
                         "float": "right"
                     }
-                    ).html(
-                    "<p> Seeking a position in Cyber Security or Software Development where my education and passion will provide value to the employer and the opportunity for further hands-on experience. </p>"
-                    ).appendTo('#content');
+                    ).appendTo('#content').html('<p>hello world</p>');
                 
             }
     
