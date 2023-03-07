@@ -3,11 +3,11 @@
 @import url(node_modules\@fortawesome\fontawesome-free\css\all.css>); */
 
 :root {
-    --light1: #f78a78;
-    --theme: #ae0d7a;
-    --dark1: #7cb833;
-    --light2: #FDED2A;
-    --dark2: #213409;
+    --light1: #86F786;
+    --light2: #6DE5F7;
+    --theme: #f78a78;
+    --dark1: #65AB65;
+    --dark2: #439DAB;
     --black: #000;
     --white: #fff;
 
@@ -16,12 +16,12 @@
 body {
     padding: .5rem;
     font-family: Inconsolata; 
-    background: var(--light1);
+    background: var(--theme);
     
 }
 
 .container {
-    margin: 0 auto; 
+    margin: 5px; 
     max-width: 250px;
 }
 
@@ -37,6 +37,7 @@ body {
     border: 0;
     padding: 1rem; 
     background: #fff; 
+    z-index: 1000;
 } 
 .dropdown > .burgerbutton { 
     cursor: pointer; 
@@ -60,9 +61,10 @@ body {
     justify-content: space-between; 
     padding: 1rem; 
     
+    
 } 
 .items-list > .navItem:hover { 
-    background: #f9ada0; 
+    background: var(--theme);
     color: white; 
     
 } 
@@ -85,15 +87,6 @@ body {
     clear: both;
 }
 
-#header {
-    border: 3px solid #000000;
-    background-color: var(--light1);
-    width: 90%;
-    height: auto;
-    margin-top: 4em;
-}
-
-
 
 .center {
     margin-left: auto;
@@ -101,38 +94,92 @@ body {
     text-align: center;
 }
 
-#navlist {
-    border: 3px solid white;
-    width: 20%;
+#header {
+    box-shadow: 0 1px 3px var(--dark1), 0 1px 2px var(--black);
+    margin-top: 0;
+    padding: 10px 0;
+    text-align: center;
     background-color: var(--light1);
+    width: 50%;
+    height: auto;
+    border-radius: 3px;
+    z-index: 2;
+}
+.cvContainer {
+    display: flex;
     
 }
 
+.boxes {
+    box-shadow: 0 1px 3px var(--dark2), 0 1px 2px var(--black);
+    border-radius: 3px;
+    display: flex;
+    flex: 50%;
+    position: relative;
+    justify-content: space-between;  
+    color: var(--black); 
+    box-sizing: border-box; 
+    font-weight: bold; 
+    border: 0;
+    padding: 1rem; 
+    background-color: var(--light2);
+    margin: 2rem;
+    
+    z-index: 3;
 
-#skills {
-    border: 2px solid white;
-    background-color: var(--dark1);
-    margin: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    width: 40%;
-    float: right;
+}
+
+.panel {
+    display: flex;
+    flex: 100%;
+    box-shadow: 0 1px 3px var(--dark2), 0 1px 2px var(--black);
+    border-radius: 3px;
+    box-sizing: border-box;
+    justify-content: space-between; 
+    position: relative;
+    border: 0;
+    padding: 1rem; 
+    background-color: var(--light2);
+    
     
 }
 
-#objective {
-    border: 2px solid var(--black);
-    background-color: var(--dark1);
-    width: 35%;
-    margin: 1em; 
-    padding-left: 2em;   
-    padding-right: 2em;
-    float: left;
-
+/* .column1 {
+    float:inline-start;
 }
 
-li {
-    width: 60%;
-    margin: auto;
-    padding: 1ch;
+.column2 {
+    float:inline-end;
+} */
+
+.contact {
+    box-shadow: 0 1px 3px var(--dark1), 0 1px 2px var(--black); 
+    border-radius: 3px;
+    display: flex; 
+    justify-content: space-evenly; 
+    color: var(--black); 
+    box-sizing: border-box; 
+    font-size: larger;
+    padding: 1rem; 
+    background-color: var(--light1);
+    width:60%
 }
+.all-list { 
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+    border-radius: 3px; 
+    position: absolute; 
+    background: var(--light2    ); */
+    /* padding: .5rem 0;  */
+    
+    
+    
+    
+}
+.all-list > .skillItem {
+display: flex; 
+ }
+
+.all-list.open { 
+    display: block; 
+    justify-content: space-between; 
+} 
