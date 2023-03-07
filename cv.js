@@ -24,21 +24,45 @@ $(
         }
 // base layout of all pages
         function pglayout(){
-            var header = $('<div id="header" class="center"> <h1>Sandra Schreffler</h1> </div>');
-            var mainDiv = $('<div id="content" class="center"></div>');
+            var header = $("<div/>", {
+                id: "header",
+                class: "center"
+                
 
-            $('body').append(header).append(mainDiv);
+            }).css(
+                {
+                    "backgroundColor": "var(--light2)"
+                }
+
+            ).html('<h1> Sandra Schreffler </h1>'
+            );
+
+            var mainDiv = $("<div/>", {
+                id: "content",
+            }
+            );
+
+            $('body').append(mainDiv).append(header);
+
+            // pageSize('content');
         }
+
+        //responsive page size
+        // function pageSize(divID){
+        //     pageDiv = $(divID);
+        //     pageDiv
+        // }
 
         // building Objective section of CV 
         function myObjectives(){
             $("<div/>", {
                     id: "objective",
-                    class: "class1"
+                    class: "center"
                 }).css(
                     {
-                        "backgroundColor": "var(--theme)",
+                        "backgroundColor": "var(--dark1)",
                         "font-size": "1em",
+                        "width": "30%",
                         "float": "right"
                     }
                     ).html(

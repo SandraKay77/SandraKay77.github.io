@@ -11,7 +11,7 @@ $(
         function navBar(){
             pglayout();
             var navList = $('<div id="nav"> <ul id="navlist"> ' + '</ul> </div>');
-            $('body').append(navList);
+            $("body").append(navList);
         let page = "";
             for (let x of page_names){
             page = $('<li> <a href=' + x + '.html>' + x + '</a> </li>');
