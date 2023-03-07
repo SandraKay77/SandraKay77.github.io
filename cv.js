@@ -56,7 +56,8 @@ $(
                         openMenu(evt);}
                 }).append(
                     $('<span/>', {
-                        class: 'label'
+                        class: 'label',
+                        id: 'label'
                     }),
                     CARET
                 ));
