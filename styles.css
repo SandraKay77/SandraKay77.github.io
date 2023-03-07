@@ -11,8 +11,8 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    background-color: var(--dark2);
+    
+    background-color: var(--light1);
     
 }
 
