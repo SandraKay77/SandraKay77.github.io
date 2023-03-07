@@ -14,45 +14,75 @@ $(
 
         function navBar(){
             pglayout();
-           
-                '<ul id="navList"></ul>');
-            
 
-        let page = "";
-            for (let x of PAGE_NAMES){
-            page = $('<li> <a href=' + x + '.html>' + x + '</a> </li>');
-            $('#navList').append(page);
-            }
+            var navButton = "<span class='label'>Menu</span>";
+            var burgerButton = $("<span/>", {
+                class: 'burgerbutton fa-solid fa-bars',
+            });
 
-        
+            var navList = $("<ul/>", {
+                id: "items-list",
+                class: "items-list" 
+            });
+
+            var page1 = $("<li class='navItem'><i class='iconitem fa-solid fa-house'></i>  Home </li>");
+            var page2 = $("<li class='navItem'> <i class='iconitem fa-solid fa-file-lines'></i> Resume</li>");
+            var page3 = $("<li class='navItem'><i class='iconitem fa-solid fa-paintbrush'></i> Art</li>");
+            var page4 = $("<li class='navItem'> <i class='iconitem fa-regular fa-user'></i>About </li>");
+
+
+            $('#dropMenu').append(navButton, burgerButton, navList);
+            navList.append(page1, page2, page3, page4); 
+
+          
             
+  
+
         }
 
-// base layout of all pages
+        function dropMenu(){
+            console.log("Hello World")
+            
+            $('.items-list').toggleClass('open')
+
+
+            // document.addEventListener('click', ($event) =>
+            // $event.target !== $burgerButton &&
+            // $containerItems.classList.remove('open'));
+        }
+    
         function pglayout(){
-            var header = $("<div/>", {
+            $("<div/>", {
                 id: "header",
-                class: "center"
-            }).css(
-                {
+                class: "center",
+                html: "<h1> Sandra Schreffler </h1>",
+                css: {
                     "backgroundColor": "var(--light2)",
                     "width": "50%"
-                }
-            ).html('<h1> Sandra Schreffler </h1>');
+            }   
+            }).appendTo('body');
 
-            var navBar = $("<div/>", {
+            $("<div/>", {
                 id: "navbar",
-                class: "allPages"
-            }).css(
-                {
-                    "position": "fixed",
-                    "top": "0",
-                    "left": "0" 
-                }).html('<button onclick="navDrop()"> Menu </button>');
-                
-            $('body').append(header, navBar);
+                class: "container",
+                css: {
+                    "margin": "0 auto", 
+                    "max-width": "250px"
+                },
+                click: function(){
+                    dropMenu();
+                }
+                }).appendTo('body');
 
-            // pageSize('content');
+            $("<div/>", {
+                class: "dropdown",
+                id: "dropMenu"
+        }
+            ).appendTo('#navbar')
+                
+            // $('body').append(header, navBar);
+
+            
         }
 
 
