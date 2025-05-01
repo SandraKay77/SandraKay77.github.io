@@ -20,6 +20,12 @@ body {
     
 }
 
+.responsiveImage {
+  max-width: fit-content;
+  
+
+}
+
 .container {
     margin: 5px; 
     max-width: 250px;
