@@ -5,71 +5,110 @@
 <!DOCTYPE html>
 
 <head>
-
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="https://kit.fontawesome.com/12351fbcbb.js" crossorigin="anonymous"></script>
-    <!-- <script defer src="jquery-3.6.1.js"></script>
-    <script defer src="mysite.js"></script> -->
-
     <title>
         Sandra Kay
     </title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontstyles.css">
+    <script defer src="https://kit.fontawesome.com/12351fbcbb.js" crossorigin="anonymous"></script>
+    <!-- <script defer src="jquery-3.6.1.js"></script>
+    <script defer src="mysite.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
 </head>
 
-<body>
-    <div class="w3-container">
-        
-    </div>
-   
-    <div>
-        <div id="navbar" class="w3-bar w3-teal w3-container">
-            <!-- <div class="w3-dropdown-click w3-padding-large" id="dropMenu"><span class="w3-padding-small burgerbutton fa-solid fa-bars"></span><span class="label">Menu</span> -->
-            <div class="navitems">
-                <div class="w3-bar-item">
-                    <i class="fa-solid fa-house w3-padding-small"></i>
-                    <a href="index.html">Home</a>
+<body class="gradient">
+    <script>0</script>
+    <div class="headImage">
+        <!-- top navigation bar -->
+        <div id="home">
+            <nav id="navbar" class="w3-container w3-bar">
+                <!-- <div class="w3-dropdown-click w3-padding-large" id="dropMenu"><span class="w3-padding-small burgerbutton fa-solid fa-bars"></span><span class="label">Menu</span> -->
+                <div class="w3-container w3-right w3">
+                    <a class="w3-bar-item navItem" href="#home">
+                        <i class="fa-solid fa-house w3-padding-small"></i>
+                        Home</a>
+                    <a class="w3-bar-item navItem" href="#about-me">
+                        <i class="fa-regular fa-user w3-padding-small"></i>About Me</a>
+                    <a class="w3-bar-item navItem" href="#gallery">
+                        <i class="fa-solid fa-paintbrush w3-padding-small"></i>Art</a>
+                    <a class="w3-bar-item navItem" href="cv.html">
+                        <i class="fa-solid fa-file-lines w3-padding-small"></i>Resume</a>
+                    <a class="w3-bar-item navItem" href="">
+                        <i class="fa-solid fa-file-lines w3-padding-small"></i>Contact Me</a>
+                    </a>
                 </div>
-                <div class="w3-bar-item">
-                    <i class="fa-solid fa-file-lines w3-padding-small"></i> <a href="cv.html">Resume</a>
-                </div>
-                <div class="w3-bar-item">
-                    <i class="fa-solid fa-paintbrush w3-padding-small"></i> <a href="Art_projects.html">Art</a>
-                </div>
-                <div class="w3-bar-item">
-                    <i class="fa-regular fa-user w3-padding-small"></i> <a href="About_me.html">About</a>
-                </div>
-            </div>
+            </nav>
         </div>
-    </div>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>
-                I am Sandra
-            </h1>
-            <p>
-                Hear Me Roar
-            </p>
-        </div>
-    </div>
-    <!-- <div class="w3-container w3-padding-large w3-mobile">
-        <div class="w3-cell-row w3-flex">
-            <div class="w3-cell w3-half w3-black">
-                
-            </div>
-            
-            <div class="w3-card w3-light-gray w3-quarter w3-padding-small w3-cell center">
-                <p class="center">Paragraph of Content
-            </div>
-        </div>
-    </div> -->
-    <!-- 
-<div id="section" class="w3-flex" style="gap: 8px;">
-        <h1> Sandra Schreffler </h1>
-</div> -->
 
+        <!-- hero image text and content -->
+        <div class="intro w3-container">
+            <div class="italianno-regular page-name">Sandra Schreffler</div>
+            <div class="subHeader macondo-regular">
+                Art - Web Design - Consulting
+            </div>
+
+        </div>
+        <a class="w3-container" href="TestPage.html"> To the Test Page!</a>
+    </div>
+    <div class="content-box">
+        <section id="about-me">
+            <div class="w3-container about-me">
+                <span>
+                    Heya
+                </span>
+                <div class="about-text">
+                    A little something about me
+                </div>
+            </div>
+        </section>
+        <!-- examples of my work -->
+        <section id="gallery">
+            <div class="center">
+                <!-- section header -->
+                <h1>
+                    Some Recent Paintings
+                </h1>
+            </div>
+            <!-- <div class="w3-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr;gap:8px;"> -->
+            <div class="gallery">
+                <div class="w3-card art-card">
+                    <a target="_blank" href="images/oceanfluid.png">
+                        <img src="images/oceanfluid.png" alt="Ocean Fluid Pour Painting" class="art-images">
+                    </a>
+                </div>
+                <div class="w3-card art-card">
+                    <a target="_blank" href="images/SweetPeas.jpg">
+                        <img src="images/SweetPeas.jpg" alt="Sweet Peas in Acrylic" class="art-images">
+                    </a>
+
+                </div>
+                <div class="w3-card art-card">
+                    <a target="_blank" href="images/ColorCircle.jpg">
+                        <img src="images/ColorCircle.jpg" alt="Color Circle of Fifths" class="art-images">
+                    </a>
+                </div>
+                <div class="w3-card art-card">
+                    <a target="_blank" href="images/HeartPour.jpg">
+                        <img src="images/HeartPour.jpg" alt="Heart Poured Acrylic Painting" class="art-images">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+<div class="w3-container center contact w3-margin-top">
+
+        <p>Follow me on Social Media</p>
+        <i class="fa fa-instagram"> </i>
+        <i class="fa fa-linkedin"></i>
+        
+</div>
 
 
 

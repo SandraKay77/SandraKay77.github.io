@@ -3,52 +3,169 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <script defer src="https://kit.fontawesome.com/12351fbcbb.js" crossorigin="anonymous"></script>
-    <script defer src="jquery-3.6.1.js"></script>
-    <script defer src="mysite.js"></script>
-    <script defer src="cv.js"></script>
 
     <title>
         Sandra Schreffler - Resume
     </title>
 </head>
 
-<body>
-    <div class="cvContainer">
-        <div id="objective" class="boxes objective">
-            <div class="subHeader"><span class="label" id="label">Objective</span><span id="myCaret"
-                    class="fa-solid fa-angle-down"></span></div>
-            <table id="objective" class="all-list" style="display: table;">
-                <thead class="allItem">
-                    <tr>
-                        <th>Currently seeking a position in Software Development and/or Security where my education and
-                            passion will provide value to the employer and the opportunity for further hands-on
-                            experience. </th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="boxes skills" id="skills" style="grid-column-start: 2;">
-            <div class="subHeader"><span class="label" id="label">Skills</span><span id="myCaret"
-                    class="fa-solid fa-angle-right"></span></div>
-            <ul id="skillList" class="all-list">
-                <li class="allItem">Analytical Problem Solver</li>
-                <li class="allItem">Programming Languages</li>
-                <li class="allItem">Network and Data Communications</li>
-                <li class="allItem">Security Tools</li>
-                <li class="allItem">Operating Systems</li>
-            </ul>
-        </div>
-        <div id="work" class="boxes work">
-            <div class="subHeader"><span class="label" id="label">Work Experience</span><span id="myCaret"
-                    class="fa-solid fa-angle-down"></span></div>
-        </div>
-        <div id="projects" class="boxes projects" style="grid-column-start: 2;">
-            <div class="subHeader"><span class="label" id="label">Extracurricular and Other Projects</span><span
-                    id="myCaret" class="fa-solid fa-angle-down"></span></div>
-        </div>
+<body class="gradient">
+    <div id="home">
+        <nav id="navbar" class="w3-container w3-bar">
+            <!-- <div class="w3-dropdown-click w3-padding-large" id="dropMenu"><span class="w3-padding-small burgerbutton fa-solid fa-bars"></span><span class="label">Menu</span> -->
+            <div class="w3-container w3-right w3">
+                <a class="w3-bar-item navItem" href="index.html">
+                    <i class="fa-solid fa-house w3-padding-small"></i>
+                    Return to Home</a>
+            </div>
+        </nav>
     </div>
+    <!-- page container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+        <!-- Building the Grid -->
+        <div class="w3-row-padding">
+            <!-- Left Column -->
+            <div class="w3-third">
+                <div class="w3-sand w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="images/sandra010.jpg" class="w3-round" style="width:100%" alt="Avatar">
+                        <div class="w3-container w3-text-khaki w3-display-bottomleft">
+                            <h2> Sandra Schreffler</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                            Web Design/Development</p>
+                        <p><i class="fa fa-computer fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                            Information Security</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Boise, ID</p>
+                        <p>
+                            <a href="mailto:sandra.schreffler@outlook.com?subject=Resume Inquiry">
+                                <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Email</a>
+                        </p>
+                        <hr>
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <p>Web Design/Development</p>
+                        <p>CompTIA Sec+ Certified</p>
+                        <p></p>
+                        <br>
+                        <br>
+                    </div>
+                </div><br>
+                <!-- end left column -->
+            </div>
 
+            <!-- Right Column  -->
+            <div class="w3-twothird">
+                <div class="w3-container w3-card w3-sand w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Job Title</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Date range <span
+                                class="w3-tag w3-teal w3-round">end date</span></h6>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
+                        </h6>
+                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                    </div>
+                </div>
+
+                <!-- Education -->
+
+
+                <div class="w3-container w3-card w3-sand">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+                        Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                            Forever</h6>
+                        <p>Web Development! All I need to know in one place</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>London Business School</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+                        <p>Master Degree</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>School of Coding</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+                        <p>Bachelor Degree</p><br>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--   
+
+                    <div class="subHeader"><span class="label" id="label">Objective</span><span id="myCaret"
+                            class="fa-solid fa-angle-down"></span></div>
+                    <table id="objective" class="all-list" style="display: table;">
+                        <thead class="allItem">
+                            <tr>
+                                <th>Currently seeking a position in Software Development and/or Security where my
+                                    education
+                                    and
+                                    passion will provide value to the employer and the opportunity for further hands-on
+                                    experience. </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="boxes skills" id="skills" style="grid-column-start: 2;">
+                    <div class="subHeader"><span class="label" id="label">Skills</span><span id="myCaret"
+                            class="fa-solid fa-angle-right"></span></div>
+                    <ul id="skillList" class="all-list">
+                        <li class="allItem">Analytical Problem Solver</li>
+                        <li class="allItem">Programming Languages</li>
+                        <li class="allItem">Network and Data Communications</li>
+                        <li class="allItem">Security Tools</li>
+                        <li class="allItem">Operating Systems</li>
+                    </ul>
+                </div>
+                <div id="work" class="boxes work">
+                    <div class="subHeader"><span class="label" id="label">Work Experience</span><span id="myCaret"
+                            class="fa-solid fa-angle-down"></span></div>
+                </div>
+                <div id="projects" class="boxes projects" style="grid-column-start: 2;">
+                    <div class="subHeader"><span class="label" id="label">Extracurricular and Other Projects</span><span
+                            id="myCaret" class="fa-solid fa-angle-down"></span></div>
+                </div>
+            </div> -->
+
+            </div>
+            <div class="w3-container center contact w3-margin-top">
+
+                <p>Follow me on Social Media</p>
+                <i class="fa fa-instagram"> </i>
+                <i class="fa fa-linkedin"></i>
+
+            </div>
 </body>
 
 </html>
