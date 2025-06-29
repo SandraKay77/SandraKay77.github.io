@@ -8,126 +8,227 @@
     <title>
         Sandra Kay
     </title>
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="corestyles.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontstyles.css">
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="mobilestyles.css">
+    <!-- <link rel="stylesheet" href="fontstyles.css"> -->
     <script defer src="https://kit.fontawesome.com/12351fbcbb.js" crossorigin="anonymous"></script>
-    <!-- <script defer src="jquery-3.6.1.js"></script>-->
-    
+    <script src="libraries\jquery-3.6.1.js"></script>
+    <script src="common.js"></script>
+
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <script>0</script>
-    <div class="headImage">
-        <!-- top navigation bar -->
-        <div id="home">
-            <nav id="navbar" class="w3-container w3-bar">
-                <!-- <div class="w3-dropdown-click w3-padding-large" id="dropMenu"><span class="w3-padding-small burgerbutton fa-solid fa-bars"></span><span class="label">Menu</span> -->
-                <div class="w3-container w3-right w3">
-                    <a class="w3-bar-item navItem" href="#home">
-                        <i class="fa-solid fa-house w3-padding-small"></i>
+    <div id="home" class="homediv">
+        <div class="head-image w-full">
+            <!-- Nav bar -->
+
+            <nav id="navbar" class="md:w-full contents md:block text-lg text-right text-white p-3">
+                <!-- Mobile Menu navigation -->
+
+                <!-- container wrapper for mobile -->
+                <button id="burger-button" class="mx-auto block md:hidden w-1/6 float-right" onclick="mobileMenu();"
+                    aria-label="mobile menu toggle">
+                    <i class="fa-solid fa-bars"></i></button>
+                <div class="nav-wrapper w-full ">
+                    <!-- all nav links -->
+                    <a class="nav-item hidden md:inline p-3" href="#home">
+                        <i class="fa-solid fa-house p-3"></i>
                         Home</a>
-                    <a class="w3-bar-item navItem" href="#about-me">
-                        <i class="fa-regular fa-user w3-padding-small"></i>About Me</a>
-                    <a class="w3-bar-item navItem" href="#gallery">
-                        <i class="fa-solid fa-paintbrush w3-padding-small"></i>Art</a>
-                    <a class="w3-bar-item navItem" href="cv.html">
-                        <i class="fa-solid fa-file-lines w3-padding-small"></i>Resume</a>
-                    <a class="w3-bar-item navItem" href="">
-                        <i class="fa-solid fa-file-lines w3-padding-small"></i>Contact Me</a>
+                    <a class="nav-item hidden md:inline p-3" href="#about-me">
+                        <i class="fa-regular fa-user px-3"></i>About Me</a>
+                    <a class="nav-item hidden md:inline p-3" href="#gallery">
+                        <i class="fa-solid fa-paintbrush px-3"></i>Art</a>
+                    <a class="nav-item hidden md:inline p-3" href="cv.html" label="resume">
+                        <i class="fa-solid fa-file-lines px-3"></i>Resume</a>
+                    <a class="nav-item hidden md:inline p-3" href="" label="Contact">
+                        <i class="fa-solid fa-mobile-phone px-3"></i>Contact Me</a>
                     </a>
                 </div>
             </nav>
-        </div>
-
-        <!-- hero image text and content -->
-        <div class="intro w3-container">
-            <div class="italianno-regular page-name">Sandra Schreffler</div>
-            <div class="subHeader macondo-regular">
-                Art - Web Design - Consulting
+            <div class="intro clear-right h-4/5 flex flex-col justify-around">
+                <div class="macondo-regular mx-auto w-full text-center md:text-7xl lg:text-8xl text-3xl">
+                    <h1 class="text-white md:text-black">Sandra Schreffler</h1>
+                </div>
+                <div class="mx-auto italianno-regular text-center md:text-6xl lg:text-8xl text-3xl">
+                    <h2 class="text-white md:text-black">Art - Web Design -
+                        Consulting</h2>
+                </div>
             </div>
 
         </div>
     </div>
-    <div class="content-box">
-        <section id="about-me">
-            <div class="w3-container about-me">
-                <span>
-                    Heya
-                </span>
-                <div class="about-text">
-                    A little something about me
-                </div>
-            </div>
-        </section>
+
+    <section id="about-me" class="p-3">
+        <div class="about-me panelblock">
+            <!-- <div class="ca rounded-full"> -->
+            <img src="images\Sandra-in-grass.jpg" alt="Sandra-In-Grass"
+                class="card float-right rounded-full object-cover h-55 m-2">
+
+            <!-- <div class="mx-auto md:w-1/2 float-left text-center"> -->
+            <p class="text-wrap text-center m-1.5 textlg lg:text-2xl">I am an artist and web designer living in Idaho.
+                My formal education is in music and tech, but I am always seeking to learn, and have gained significant
+                experience and
+                skills in a variety of endeavors.
+                <br>
+                In my spare time I enjoy gardening, knitting, and spending time with my husky.
+                <a href="" class="align-super underline text-sm text-indigo-800 invisible">(click here for
+                    pictures!)</a>
+            </p>
+            <!-- </div> -->
+        </div>
+
+
+
+
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
         <!-- examples of my work -->
+
         <section id="gallery">
-            <div class="center">
+            <div class="center mt-5 p-3">
                 <!-- section header -->
-                <h1>
+                <h3 class="macondo-regular text-4xl md:text-6xl mb-4 p-4">
                     Some Recent Paintings
-                </h1>
-            </div>
-            <!-- <div class="w3-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr;gap:8px;"> -->
-            <div class="gallery">
-                <div class="w3-card art-card">
-                    <a target="_blank" href="images/oceanfluid.png">
-                        <img src="images/oceanfluid.png" alt="Ocean Fluid Pour Painting" class="art-images">
-                    </a>
+                </h3>
+                <div class="flex flex-row flex-wrap overflow-hidden">
+                    <div class="card">
+                        <a target="_blank" href="images/oceanfluid.png">
+                            <img src="images/oceanfluid.png" alt="Ocean Fluid Pour Painting"
+                                class="h-28 md:max-h-36 object-cover">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a target="_blank" href="images/SweetPeas.jpg">
+                            <img src="images/SweetPeas.jpg" alt="Sweet Peas in Acrylic"
+                                class="h-28 md:max-h-36 object-cover">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a target="_blank" href="images/ColorCircle.jpg">
+                            <img src="images/ColorCircle.jpg" alt="Color Circle of Fifths"
+                                class="h-28 md:max-h-36 object-cover">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a target="_blank" href="images/HeartPour.jpg">
+                            <img src="images/HeartPour.jpg" alt="Heart Poured Acrylic Painting"
+                                class="h-28 md:max-h-36 object-cover">
+                        </a>
+                    </div>
                 </div>
-                <div class="w3-card art-card">
-                    <a target="_blank" href="images/SweetPeas.jpg">
-                        <img src="images/SweetPeas.jpg" alt="Sweet Peas in Acrylic" class="art-images">
-                    </a>
-
-                </div>
-                <div class="w3-card art-card">
-                    <a target="_blank" href="images/ColorCircle.jpg">
-                        <img src="images/ColorCircle.jpg" alt="Color Circle of Fifths" class="art-images">
-                    </a>
-                </div>
-                <div class="w3-card art-card">
-                    <a target="_blank" href="images/HeartPour.jpg">
-                        <img src="images/HeartPour.jpg" alt="Heart Poured Acrylic Painting" class="art-images">
-                    </a>
-                </div>
-            </div>
         </section>
-        <div class="w3-margin-top contact">
-            <span class="form-text">
-                <h4 class="macondo-bold">Contact Me</h4>
-                <p>If you have questions, inquiries, or want to work with me, please feel free to contact me.</p>
-            </span>
 
-            <form action="contactform.php" method="post" id="contactForm">
-                <div class="form-group">
-                    <label for="uname">Name</label>
-                    <input type="text" id="uname" name="userName" placeholder="Name">
+
+        <!-- ============================================ -->
+        <!--                   Contact Me                 -->
+        <!-- ============================================ -->
+
+        <div id="contact">
+            <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+            <div class="container mx-auto ">
+                <div class="max-w-xl mx-auto contact my-10 p-5 rounded-md shadow-sm">
+                    <div class="text-center">
+                        <h1 class="my-3 text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                            Contact Me
+                        </h1>
+                        <p class="text-gray-200">
+                            Reach out if you have any questions or wish to work with me. I'd love to hear from you!
+                        </p>
+                    </div>
+                    <div class="m-7">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation"
+                            novalidate>
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                            <div class="flex mb-6 space-x-4">
+
+
+                                <div class="w-full md:w-1/2">
+                                    <label for="fname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">First
+                                        Name</label>
+                                    <input type="text" name="name" id="first_name" placeholder="John" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <label for="lname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Last
+                                        Name</label>
+                                    <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex mb-6 space-x-4">
+                                <div class="w-full">
+                                    <label for="email" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Email
+                                        Address</label>
+                                    <input type="email" name="email" id="email" placeholder="you@company.com" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <div class="empty-feedback text-red-400 text-sm mt-1">
+                                        Please provide your email address.
+                                    </div>
+                                    <div class="invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Your
+                                    Message</label>
+
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                                    required></textarea>
+                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <button type="submit"
+                                    class="w-full px-3 py-4 text-white bg-slate-700 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                    Send Message
+                                </button>
+                            </div>
+                            <p class="text-base text-center text-gray-400" id="result"></p>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="eaddress">Email Address </label>
-                    <input type="email" id="eaddress" name="emailAddress" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="message"> Subject</label>
-                    <input type="text" id="message" name="message" placeholder="Write Something...">
-                </div>
-                <button type="submit" class="submit-button">
-                    Send Message
-                </button>
-            </form>
+            </div>
+
         </div>
-    </div>
-    <div class="w3-container center w3-margin-top">
-        <p>Follow me on Social Media</p>
-        <span class="contact-icon">
-            <a href="https://www.instagram.com/sandrakay77/"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sandra-schreffler317/"><i class="fa fa-linkedin"></i></a>
-        </span>
-    </div>
+
+
+
+        <!-- ============================================ -->
+        <!--               Universal Footer                -->
+        <!-- ============================================ -->
 
 </body>
 

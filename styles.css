@@ -2,84 +2,43 @@
 /* @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(node_modules\@fortawesome\fontawesome-free\css\all.css>); */
 @import url(/images/);
-@import "tailwindcss";
-
-:root {
-
-  --light1: #86F786;
-  --light2: #6DE5F7;
-  --theme: #f78a78;
-  --dark1: #65AB65;
-  --dark2: #439DAB;
-  --black: #000;
-  --white: #fff;
-
-
-  --autoMargin: 1em;
-  --autoWidth: calc(100vw - var(var(--autoMargin)));
-
-
-  /* dark1= rgb(101, 171, 101) 
-  dark2= rgb(67, 157, 171) 
-  light2= rgb(109, 229, 247)
-  light1= rgb(134, 247, 134)
-  */
-
-}
-
-body {
-  background-image: linear-gradient(135deg, var(--black), var(--dark1), var(--theme));
-  height: auto;
-  width: 100%;
-  font-family: Inconsolata;
-}
-
-@media only screen and (min-width:600px) {
-
-}
-  
 
 
 /* 
-h1 {
-  font-family: fantasy;
-  
-} */
-/* 
-.gradient {
-  background-image: linear-gradient(135deg, var(--black), var(--dark1), var(--theme));
-  } */
+Verification for contact form. 
+*/
 
-#navbar {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 5px;
-  border: #000 3px;
-  background-color: rgb(101, 171, 101, .5);
-  font-weight: bold;
-  font-size: 1.5em;
-  color: var(--white);
-  width: 100vw - 3px;
-  position: sticky;
-  top: 0px;
+.invalid-feedback,
+.empty-feedback {
+  display: none;
 }
 
-.navItem {
-  border: solid 3px black;
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+
+
+.nav-item {
   border-radius: 3px;
   background-color: rgb(101, 171, 101, .1);
+  text-align: center;
 }
 
-
-.navItem:hover {
+.nav-item:hover {
   background: var(--dark2);
   color: var(--black);
 }
 
-.center {
-  margin: auto;
-  text-align: center;
-  display: block;
-}
 
 .art-section {
   margin: 15px;
@@ -100,89 +59,24 @@ h1 {
   border: 4px solid rgb(204, 204, 204);
 }
 
-.art-images {
-  width: 150px;
-  height: 150px;
-  display: block;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-between;
-}
-
-#art-gallery {
-  margin-bottom: 4em;
-}
-
-
-
-/* @media only screen and (max-width: 500px) {
-  .responsive {
-    
-  }
-} */
-
-.headImage {
+.head-image {
   box-shadow: 0 1px 3px var(--dark1), 0 1px 2px var(--dark1);
   background-image: url(images/cherryblossoms.jpg);
-  background-position: left top;
   background-size: cover;
-  background-blend-mode: lighten;
+  /* background-blend-mode: lighten; */
   height: 35vw;
-  border-radius: 5px;
-  margin: auto;
-  width: 100vw;
   overflow: hidden;
 
 }
 
 .intro {
   color: var(--black);
-  text-align: center;
-  margin: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: center;
-  position: absolute;
-  left: 5%;
-  top: 20%;
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-image: linear-gradient(95deg, rgb(134, 247, 134, .5), rgb(67, 157, 171, .5), var(--theme));
-  border-radius: 10px;
-}
-
-.page-name {
-  font-size: 6em;
-  margin-bottom: -20px;
-}
-
-.subHeader {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 10px;
+  z-index: 3;
 }
 
 .about-me {
   background-color: var(--dark1);
-  /* width: 100vw;*/
-  height: fit-content;
-  margin: 2.5em;
-  font-size: 18px;
-  padding: 1em;
   border-radius: 4px;
-  display: block;
-  box-shadow: 0 1px 3px var(--dark2), 0 1px 2px var(--black);
-}
-
-.about-text {
-  box-shadow: 0 1px 3px var(--dark2), 0 1px 2px var(--black);
-  padding: 5px;
-  margin: auto;
-  float: inline-end;
-  font-size: 1.5em;
 }
 
 .boxes {
@@ -202,19 +96,12 @@ h1 {
 
 }
 
+
+
+
 .contact {
-  box-shadow: 0 1px 3px var(--dark1), 0 1px 2px var(--black);
-  border-radius: 4px;
-  justify-content: space-between;
-  text-align: justify;
   color: var(--black);
-  /* box-sizing: border-box; */
-  font-size: larger;
-  padding: 1rem;
-  background-color: var(--light1);
-  width: 600px;
-  margin: auto;
-  display: grid;
+  background-color: var(--dark2);
 }
 
 .contact-icon {
@@ -222,10 +109,7 @@ h1 {
   color: var(--dark2)
 }
 
-.form-text {
-  width: 80%;
-  margin: auto;
-}
+
 /* 
 #contact-form {
   align-items: center;
@@ -234,10 +118,9 @@ h1 {
 .form-group {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
   margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .form-group::label {
@@ -249,7 +132,6 @@ h1 {
 
 .form-group::input,
 textarea {
-
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ddd;
@@ -276,10 +158,6 @@ textarea {
   max-width: 100vw;
 }
 
-.container {
-  margin-left: 16px;
-  margin-right: 16px
-}
 
 .column {
   float: left;
@@ -294,12 +172,12 @@ textarea {
   position: relative;
   bottom: 0px;
 
-
 }
 
+
+
+
 /* Font Styles */
-
-
 
 .corinthia-regular {
   font-family: "Corinthia", cursive;
@@ -347,3 +225,82 @@ textarea {
   font-weight: 400;
   font-style: normal;
 }
+
+
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-1152 {
+    padding: var(--sectionPadding);
+  }
+
+  #gallery-1152 .cs-container {
+    width: 100%;
+    /* changes to 1280px at large desktop */
+    max-width: 59rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #gallery-1152 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #gallery-1152 .cs-topper {
+    color: #767676;
+  }
+
+  #gallery-1152 .cs-title {
+    margin: 0;
+  }
+
+  #gallery-1152 .cs-gallery {
+    width: 100%;
+    /* changes to 100% at tablet */
+    max-width: 31.25rem;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  #gallery-1152 .cs-image {
+    /* 260px - 360px */
+    min-height: clamp(16.25rem, 60vw, 20rem);
+    border-radius: 1rem;
+    /* clips the image corners */
+    overflow: hidden;
+    display: block;
+    grid-column: span 12;
+    grid-row: span 1;
+    position: relative;
+  }
+
+  #gallery-1152 .cs-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+  }
+}
+
+/* mobile displays  */

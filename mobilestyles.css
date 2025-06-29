@@ -1,0 +1,58 @@
+/*-- -------------------------- -->
+<---     Mobile Navigation      -->
+<--- -------------------------- -*/
+/* Mobile - 1023px */
+@media only screen and (max-width: 640px) {
+
+  .nav-wrapper {
+    background-color: rgb(101, 171, 101, .9);
+    display: block;
+    z-index: 4; 
+    position: absolute;
+    top: 28px;
+  }
+
+  #navbar {
+    margin: auto;
+    box-sizing: border-box;
+  } 
+  /* .nav-item {
+    display: none;
+  } */
+
+  .nav-block {
+    display: block;
+  }
+
+  
+  .nav-item:active {
+    background: var(--dark2);
+    color: var(--black);
+  }
+
+  /* 
+    .intro {
+      background-color: rgb(101, 171, 101, .8);
+    } */
+
+  .head-image {
+    background-image: none;
+    background-size: cover;
+    box-sizing: border-box;
+
+
+  }
+
+  /* .page-name {
+    font-size: larger;
+    margin-inline: auto;
+  }
+
+  .subHeader {
+    font-size: small;
+    display: block;
+    margin-inline: auto;
+  } */
+
+
+}
