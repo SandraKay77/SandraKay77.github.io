@@ -233,9 +233,6 @@
   .float-end {
     float: inline-end;
   }
-  .float-left {
-    float: left;
-  }
   .float-right {
     float: right;
   }
@@ -371,6 +368,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-auto {
+    overflow: auto;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -458,6 +458,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-balance {
+    text-wrap: balance;
   }
   .text-wrap {
     text-wrap: wrap;
@@ -630,7 +633,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Inconsolata:wght@200..900&family=Italianno&family=Macondo&family=Tangerine:wght@400;700&display=swap');
 @import url(/images/);
-@import url(/in.css);
 .invalid-feedback, .empty-feedback {
   display: none;
 }
