@@ -8,10 +8,9 @@
     <title>
         Sandra Kay
     </title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="corestyles.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="in.css">
     <link rel="stylesheet" href="mobilestyles.css">
     <!-- <link rel="stylesheet" href="fontstyles.css"> -->
     <script defer src="https://kit.fontawesome.com/12351fbcbb.js" crossorigin="anonymous"></script>
@@ -68,73 +67,77 @@
     </div>
 
     <section id="about-me" class="p-3">
-        <div class="about-me panelblock">
+        <div class="about-me panelblock overflow-auto">
             <!-- <div class="ca rounded-full"> -->
             <img src="images\Sandra-in-grass.jpg" alt="Sandra-In-Grass"
                 class="card float-right rounded-full object-cover h-55 m-2">
+            <div class="mx-auto text-balance p-5">
+                <p class="text-wrap text-center m-1.5 textlg lg:text-2xl">I am an artist and web designer living in
+                    Idaho.
+                    My formal education is in music and tech, but I am always seeking to learn, and have gained
+                    significant
+                    experience and
+                    skills in a variety of endeavors.
+                    <br>
+                    In my spare time I enjoy gardening, knitting, and spending time with my husky.
+                    <a href="" class="align-super underline text-sm text-indigo-800 invisible">(click here for
+                        pictures!)</a>
+                </p>
 
-            <!-- <div class="mx-auto md:w-1/2 float-left text-center"> -->
-            <p class="text-wrap text-center m-1.5 textlg lg:text-2xl">I am an artist and web designer living in Idaho.
-                My formal education is in music and tech, but I am always seeking to learn, and have gained significant
-                experience and
-                skills in a variety of endeavors.
-                <br>
-                In my spare time I enjoy gardening, knitting, and spending time with my husky.
-                <a href="" class="align-super underline text-sm text-indigo-800 invisible">(click here for
-                    pictures!)</a>
-            </p>
-            <!-- </div> -->
+            </div>
+
+
         </div>
+    </section>
 
 
 
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+    <!-- examples of my work -->
 
-        <!-- ============================================ -->
-        <!--                   Gallery                    -->
-        <!-- ============================================ -->
-        <!-- examples of my work -->
-
-        <section id="gallery">
-            <div class="center mt-5 p-3">
-                <!-- section header -->
-                <h3 class="macondo-regular text-4xl md:text-6xl mb-4 p-4">
-                    Some Recent Paintings
-                </h3>
-                <div class="flex flex-row flex-wrap overflow-hidden">
-                    <div class="card">
-                        <a target="_blank" href="images/oceanfluid.png">
-                            <img src="images/oceanfluid.png" alt="Ocean Fluid Pour Painting"
-                                class="h-28 md:max-h-36 object-cover">
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a target="_blank" href="images/SweetPeas.jpg">
-                            <img src="images/SweetPeas.jpg" alt="Sweet Peas in Acrylic"
-                                class="h-28 md:max-h-36 object-cover">
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a target="_blank" href="images/ColorCircle.jpg">
-                            <img src="images/ColorCircle.jpg" alt="Color Circle of Fifths"
-                                class="h-28 md:max-h-36 object-cover">
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a target="_blank" href="images/HeartPour.jpg">
-                            <img src="images/HeartPour.jpg" alt="Heart Poured Acrylic Painting"
-                                class="h-28 md:max-h-36 object-cover">
-                        </a>
-                    </div>
+    <section id="gallery">
+        <div class="center mt-5 p-3">
+            <!-- section header -->
+            <h3 class="macondo-regular text-4xl md:text-6xl mb-4 p-4">
+                Some Recent Paintings
+            </h3>
+            <div class="flex flex-row flex-wrap overflow-hidden">
+                <div class="card">
+                    <a target="_blank" href="images/oceanfluid.png">
+                        <img src="images/oceanfluid.png" alt="Ocean Fluid Pour Painting"
+                            class="h-28 md:max-h-36 object-cover">
+                    </a>
                 </div>
-        </section>
+                <div class="card">
+                    <a target="_blank" href="images/SweetPeas.jpg">
+                        <img src="images/SweetPeas.jpg" alt="Sweet Peas in Acrylic"
+                            class="h-28 md:max-h-36 object-cover">
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="images/ColorCircle.jpg">
+                        <img src="images/ColorCircle.jpg" alt="Color Circle of Fifths"
+                            class="h-28 md:max-h-36 object-cover">
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="images/HeartPour.jpg">
+                        <img src="images/HeartPour.jpg" alt="Heart Poured Acrylic Painting"
+                            class="h-28 md:max-h-36 object-cover">
+                    </a>
+                </div>
+            </div>
+    </section>
 
 
-        <!-- ============================================ -->
-        <!--                   Contact Me                 -->
-        <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                   Contact Me                 -->
+    <!-- ============================================ -->
 
-        <div id="contact">
-            <!-- 
+    <div id="contact">
+        <!-- 
     =======================================================================
 
     This is a working contact form. To receive email, 
@@ -144,91 +147,91 @@
 
     =======================================================================
  -->
-            <div class="container mx-auto ">
-                <div class="max-w-xl mx-auto contact my-10 p-5 rounded-md shadow-sm">
-                    <div class="text-center">
-                        <h1 class="my-3 text-3xl font-semibold text-gray-800 dark:text-gray-200">
-                            Contact Me
-                        </h1>
-                        <p class="text-gray-200">
-                            Reach out if you have any questions or wish to work with me. I'd love to hear from you!
-                        </p>
-                    </div>
-                    <div class="m-7">
-                        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation"
-                            novalidate>
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        <div class="container mx-auto ">
+            <div class="max-w-xl mx-auto contact my-10 p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                    <h1 class="my-3 text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        Contact Me
+                    </h1>
+                    <p class="text-gray-200">
+                        Reach out if you have any questions or wish to work with me. I'd love to hear from you!
+                    </p>
+                </div>
+                <div class="m-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation"
+                        novalidate>
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-                            <div class="flex mb-6 space-x-4">
+                        <div class="flex mb-6 space-x-4">
 
 
-                                <div class="w-full md:w-1/2">
-                                    <label for="fname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">First
-                                        Name</label>
-                                    <input type="text" name="name" id="first_name" placeholder="John" required
-                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
-                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                                        Please provide your first name.
-                                    </div>
-                                </div>
-                                <div class="w-full md:w-1/2">
-                                    <label for="lname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Last
-                                        Name</label>
-                                    <input type="text" name="last_name" id="lname" placeholder="Doe" required
-                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
-                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                                        Please provide your last name.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex mb-6 space-x-4">
-                                <div class="w-full">
-                                    <label for="email" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Email
-                                        Address</label>
-                                    <input type="email" name="email" id="email" placeholder="you@company.com" required
-                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
-                                    <div class="empty-feedback text-red-400 text-sm mt-1">
-                                        Please provide your email address.
-                                    </div>
-                                    <div class="invalid-feedback text-red-400 text-sm mt-1">
-                                        Please provide a valid email address.
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Your
-                                    Message</label>
-
-                                <textarea rows="5" name="message" id="message" placeholder="Your Message"
-                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
-                                    required></textarea>
+                            <div class="w-full md:w-1/2">
+                                <label for="fname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">First
+                                    Name</label>
+                                <input type="text" name="name" id="first_name" placeholder="John" required
+                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                                 <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                                    Please enter your message.
+                                    Please provide your first name.
                                 </div>
                             </div>
-                            <div class="mb-6">
-                                <button type="submit"
-                                    class="w-full px-3 py-4 text-white bg-slate-700 rounded-md focus:bg-indigo-600 focus:outline-none">
-                                    Send Message
-                                </button>
+                            <div class="w-full md:w-1/2">
+                                <label for="lname" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Last
+                                    Name</label>
+                                <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    Please provide your last name.
+                                </div>
                             </div>
-                            <p class="text-base text-center text-gray-400" id="result"></p>
-                        </form>
-                    </div>
+                        </div>
+
+                        <div class="flex mb-6 space-x-4">
+                            <div class="w-full">
+                                <label for="email" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Email
+                                    Address</label>
+                                <input type="email" name="email" id="email" placeholder="you@company.com" required
+                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                <div class="empty-feedback text-red-400 text-sm mt-1">
+                                    Please provide your email address.
+                                </div>
+                                <div class="invalid-feedback text-red-400 text-sm mt-1">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Your
+                                Message</label>
+
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                                required></textarea>
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Please enter your message.
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <button type="submit"
+                                class="w-full px-3 py-4 text-white bg-slate-700 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                Send Message
+                            </button>
+                        </div>
+                        <p class="text-base text-center text-gray-400" id="result"></p>
+                    </form>
                 </div>
             </div>
-
         </div>
 
+    </div>
 
 
-        <!-- ============================================ -->
-        <!--               Universal Footer                -->
-        <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!--               Universal Footer                -->
+    <!-- ============================================ -->
 
 </body>
 
