@@ -37,14 +37,8 @@ function mobileScreen(){
 }
 
 
-// flexing the mobile menu items
-function hideNavItems(){
-  if (mobileScreen()){
-    $('.nav-item').css("display", "none");
-  }
-  else {
-    $('.nav-item').css("display", "inline");
-  }
+function contactButton(){
+  window.open("contactform.html", "_blank");
 }
 
 $(document).ready(function(){
